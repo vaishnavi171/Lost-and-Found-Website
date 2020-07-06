@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		LOST AND FOUND PAGE
+	</title>
+	<style type="text/css">
+						body{
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 15px;
+					line-height: 1.5;
+					padding: 0;
+					margin: 0;
+				}
+				.container
+				{
+					color:black;
+					width:80%;
+					margin:auto;
+					overflow: hidden;
+				}
+
+				.button_1{
+					height: 38px;
+					/*width: 100px;*/
+					color: black;
+					background-color: red;
+					
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+
+				#showcase{
+					margin-top: 5px;
+					min-height: 380px;
+					background:url('images.jpeg') no-repeat;
+					background-size: 1500px 400px;
+					text-align: center;
+					color: deeppink;
+				}
+
+				#showcase h1
+				{
+					margin-top: 100px;
+					font-size: 55px;
+					margin-bottom: 10px;
+				}
+
+				#showcase p{
+					font-size: 20px;
+				}
+
+				#newsletter{
+					margin-top: 5px;
+					padding: 15px;
+					color:black;
+					background:linear-gradient(15deg,snow,thistle,whitesmoke,silver);
+				}
+
+				#newsletter h1{
+					float:left;
+				}
+
+				#newsletter form{
+					float:right;
+					margin-top:15px;
+				}
+
+				#newsletter input[type="email"]{
+					
+					padding: 4px;
+					height: 30px;
+					width:250px;
+				}
+
+				#boxes{
+					margin-top: 5px;
+					background:linear-gradient(45deg,#8E8383,silver,lightyellow);
+				}
+
+				#boxes .box{
+					float:left;
+					width:45%;
+					text-align: center;
+					padding: 10px;
+				}
+				#boxes .testimonial{
+					margin: 5px auto 5px;
+					display: grid;
+					grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+					grid-gap: 20px;
+				}
+				#boxes .testimonial .card{
+					position: relative;
+					width:350px;
+					margin: 0 auto;
+					background: gainsboro;
+					padding: 15px;
+					box-sizing: border-box;
+					text-align: center;
+					box-shadow: 0 10px 40px rgba(0,0,0,.5);
+					overflow:hidden;
+				}
+				#boxes .testimonial .card .layer{
+					position: absolute;
+					top: calc(100% - 2px);
+					left: 0%;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(#03a9f4,#e91ee3);
+					z-index: 1;
+					transition: 0.5s;
+				}
+				#boxes .testimonial .card:hover .layer{
+					top:0;
+				}
+				#boxes .testimonial .card .content{
+					position: relative;
+					z-index: 2;
+
+				}
+				/*#boxes .box img{
+					width:90px;
+				}*/
+				#boxes .testimonial .card .content p{
+					font-size: 18px;
+					line-height: 24px;
+					color: #fff;
+				}
+				#boxes .testimonial .card .content .image{
+					width: 210px;
+					height: 200px;
+					margin: 0 auto;
+					border-radius: 50%;
+					overflow: hidden;
+					border:2px solid #fff;
+					box-shadow: 0 10px 20px rgba(0,0,0,.2);
+				}
+				#boxes .testimonial .card .content .details h1{
+					font-size: 18px;
+					color: #fff;
+				}
+				footer{
+					padding: 20px;
+					margin-top: 5px;
+					color:white;
+					background-color: rosybrown;
+					text-align: center;
+				}
+	</style>
+	<meta http-equiv="refresh" content="5"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, professional web design">
+	<meta name="author" content="Brad Traversy">
+	<link rel="stylesheet" href="/C:/xampp/htdocs/example/s.css type=text/css">
+	<style type="text/css">
+		body {
+			background-color: dimgray;
+			margin: 0;}
+		.nav{
+			margin-top: 5px;
+			width: 100%;
+			background: gray;
+			height: 80px;
+			border-bottom: #e8491d 3px solid;
+			border-top: #e8491d 3px solid;
+		}
+		
+
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+		}
+
+		ul li{
+			float: left;
+			margin-top: 20px;
+		}
+
+		ul li a{
+			width: 150px;
+			color:white;
+			display: block;
+			text-decoration: none;
+			font-size: 20px;
+			text-align: center;
+			padding: 10px;
+			border-radius: 10px;
+			font-family: Century Gothic;
+			font-weight: bold;
+
+		}
+
+		a:hover{
+			background: lightgrey;
+		}
+
+		ul li ul{
+			background: grey;
+		}
+
+		ul li ul li{
+			float: none;
+
+		}
+		
+		ul li ul{
+			display: none;
+		}
+
+		ul li:hover ul{
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	<font face="Adobe Gothic Std"font size="100"font color="yellow"><b><marquee behavior="alternate" direction="right">LOST AND FOUND!!!WE ARE THERE TO HELP YOU</marquee></b></font>
+
+	<div class="nav"><ul>
+		<li><a href="#home">HOME</a></li>
+		<li><a href="http://localhost/example/feedback.php">DETAILS</a></li>
+		<li><a href="C:\Users\Priyanka\Documents\loser.html">LOSER</a>
+			<ul>
+				<li><a href="http://localhost/example/choose_lost.html#">POST</a></li>
+				<li><a href="http://localhost/example/loserupdate.html">UPDATE</a></li>
+			</ul>
+		</li>
+		<li><a href="C:\Users\Priyanka\Documents\founder.html">FOUNDER</a>
+			<ul>
+				<ul>
+				<li><a href="http://localhost/example/founder.html">POST</a></li>
+				<li><a href="http://localhost/example/fouderupdate.html">UPDATE</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	
+</header>
+<section id="showcase">
+	<div class="container">
+		<h1 style="text-shadow: 5px 5px #D3D3D3">LOST AND FOUND PAGE</h1> 
+		<p style="color: black">If you lost something, then feel free to search here!!Any kind hearted founders may post here!!
+		If you found anything, then feel free to post here!!person who lost would get benefitted!!</p>
+	</div>
+</section>
+
+<section id="newsletter">
+	<div class="container">
+		<h1>Any queries? then complaint here</h1>
+		<form>
+			<input type="email" placeholder="Enter your email">
+			<br>
+			<br>
+			<textarea name="msg" rows="5" cols="50">
+			</textarea>
+			<br>
+			<button type="submit" class="button_1">POST</button>
+		</form>
+	</div>
+</section>
+
+<section id="boxes">
+	<!--<div class="container">
+		<div class="box">
+			<img src="C:\Users\Priyanka\Desktop\webproject\loser.jpg" width="200px" height="200px">
+			<h1>LOSER</h1>
+			<p style="color: white;size:30px">If you lost anything then find here</p>
+		</div>
+		<div class="box">
+			<img src="C:\Users\Priyanka\Desktop\webproject\found.jpg" width="200px" height="200px">
+			<h1>FOUNDER</h1>
+			<p style="color: white;size: 30px">If you found anything which is not yours, then kindly post it here</p>
+		</div>
+	</div>-->
+	<div class="testimonial">
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<p style="color: white;size:30px">If you lost anything then find here</p>
+				<div class="image">
+					<img src="loser.jpg" width="200px" height="200px">
+				</div>
+				<div class="details">
+					<h1>LOSER</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>
+				<div class="image">
+					<img src="found.jpg" width="200px" height="200px">
+				</div>
+				<div class="details">
+					<h1>FOUNDER</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<footer>
+	<p>Lost and Found Webpage, Copyright &copy;</p>
+</footer>
+
+
+
+
+
+</body>
+</html>

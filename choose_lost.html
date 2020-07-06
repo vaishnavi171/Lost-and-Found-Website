@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		LOST AND FOUND PAGE
+	</title>
+	<style>
+		body{
+	/*margin-top: 5px;*/
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	
+	background: url("image2.png");
+    
+	/*background:linear-gradient(45deg,orchid,mediumorchid,darkorchid);*/
+}
+#a{
+	text-decoration: none;
+}
+.testimonial{
+	margin: 10px auto 100px;
+	display: grid;
+	margin-left: 280px;
+	/*grid-template-columns: repeat(auto-fit,minmax(350px,1fr));*/
+	grid-template-columns: 250px 250px 250px;
+	grid-gap: 20px;
+	grid-column-gap: 20px;
+}
+.testimonial .card{
+	position: relative;
+	width:250px;
+	height: 180px;
+	margin: 0 auto;
+	background: gainsboro;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	box-shadow: 0 10px 40px rgba(0,0,0,.5);
+	overflow:hidden;
+}
+.testimonial .card .layer{
+	position: absolute;
+	top: calc(100% - 2px);
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#03a9f4,#e91ee3);
+	z-index: 1;
+	transition: 0.5s;
+}
+.testimonial .card:hover .layer{
+	top:0;
+	
+}
+.testimonial .card .content{
+	position: relative;
+	z-index: 2;
+
+}
+/*#boxes .box img{
+	width:90px;
+}*/
+/*#boxes .testimonial .card .content p{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}*/
+
+.testimonial .card .content .image{
+	width: 70px;
+	height: 60px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	border:2px solid #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.testimonial .card .content .details h3{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+
+	</style>
+	<link rel="stylesheet" href="C:\Users\Priyanka\Documents\stylechoose.css">
+</head>
+<body>
+
+	<div class="testimonial">
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+			<!--<p style="color: white;size:30px">If you lost anything then find here</p>-->
+				<div class="image">
+					<img src="doc.png" width="70" height="60">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/docsearch.php" id="a"><h3>DOCUMENTS</h3></a>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src="suitcase.png" width="63" height="59">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/travelsearch.php" id="a"><h3>TRAVEL</h3></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src="vehicle.jpg" width="68" height="57">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/searchvehicle.php" id="a"><h3>VEHICLES</h3></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src="eg.png" width="67" height="60">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/egsearch.php" id="a"><h3>ELECTRONIC GADGETS</h3></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src="wallet.png" width="67" height="60">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/searchwallet.php" id="a"><h3>WALLETS</h3></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src="children.png" width="69" height="60">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/child.php" id="a"><h3>CHILDREN</h3></a>
+				</div>
+			</div>
+		</div>	
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src="miscelleanous.jpg" width="69" height="60">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/miscsearch.php" id="a"><h3>MISCELLEANOUS</h3></a>
+				</div>
+			</div>
+		</div>
+	
+
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+				<!--<p style="color: white;size:30px">If you found anything which is not yours, then kindly post it here</p>-->
+				<div class="image">
+					<img src=pet.jpg width="68" height="60">
+				</div>
+				<div class="details">
+					<a href="http://localhost/example/images/retpet1.php" id="a"><h3>PETS</h3></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

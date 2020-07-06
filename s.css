@@ -1,0 +1,141 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+.container
+{
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.button_1{
+	height: 38px;
+	/*width: 100px;*/
+	color: white;
+	background-color: red;
+	
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#showcase{
+	margin-top: 5px;
+	min-height: 380px;
+	background:url('image.jpg') no-repeat;
+	background-size: 1500px 400px;
+	text-align: center;
+	color: deeppink;
+}
+
+#showcase h1
+{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+#newsletter{
+	margin-top: 5px;
+	padding: 15px;
+	color:white;
+	background:linear-gradient(15deg,pink,violet,silver);
+}
+
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+	
+	padding: 4px;
+	height: 30px;
+	width:250px;
+}
+
+#boxes{
+	margin-top: 5px;
+	background:linear-gradient(45deg,orchid,mediumorchid,darkorchid);
+}
+
+#boxes .box{
+	float:left;
+	width:45%;
+	text-align: center;
+	padding: 10px;
+}
+#boxes .testimonial{
+	margin: 5px auto 5px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+	grid-gap: 20px;
+}
+#boxes .testimonial .card{
+	position: relative;
+	width:350px;
+	margin: 0 auto;
+	background: gainsboro;
+	padding: 15px;
+	box-sizing: border-box;
+	text-align: center;
+	box-shadow: 0 10px 40px rgba(0,0,0,.5);
+	overflow:hidden;
+}
+#boxes .testimonial .card .layer{
+	position: absolute;
+	top: calc(100% - 2px);
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#03a9f4,#e91ee3);
+	z-index: 1;
+	transition: 0.5s;
+}
+#boxes .testimonial .card:hover .layer{
+	top:0;
+}
+#boxes .testimonial .card .content{
+	position: relative;
+	z-index: 2;
+
+}
+/*#boxes .box img{
+	width:90px;
+}*/
+#boxes .testimonial .card .content p{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+#boxes .testimonial .card .content .image{
+	width: 210px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	border:2px solid #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+#boxes .testimonial .card .content .details h1{
+	font-size: 18px;
+	color: #fff;
+}
+footer{
+	padding: 20px;
+	margin-top: 5px;
+	color:white;
+	background-color: rosybrown;
+	text-align: center;
+}

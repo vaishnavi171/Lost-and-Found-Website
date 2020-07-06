@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		FOUNDER SITE
+	</title>
+	<style type="text/css">
+		body {
+			background: url("image2.png");
+    		color:white;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.eg{
+    		width: 85%;
+    		max-width: 600px;
+    		background: #ffffff;
+    		color: black;
+    		font-weight: bold;
+    		position:absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%,-50%);
+    		padding: 30px 40px;
+    		box-sizing:border-box;
+    		border-radius: 8px;
+    		text-align: center;
+    		box-shadow: 0 0 20px #000000b3;
+    	}
+    	.eg h1{
+    		margin-top: 0;
+    		font-weight: 200;
+    	}
+    	.txt{
+    		border:1px solid grey;
+    		margin: 8px 0;
+    		padding: 12px 18px;
+    		border-radius:8px;
+    	}
+    	.txt label{
+    		display: block;
+    		text-align: left;
+    		color: #333;
+    		text-transform: uppercase;
+    		font-size: 14px;
+    	}
+    	.txt input, .txt select{
+    		width: 100%;
+    		border:none;
+    		background: none;
+    		outline: none;
+    		font-size: 18px;
+    		margin-top: 6px;
+    	}
+    	.btn{
+    		display: block;
+    		background: #9b59b6;
+    		padding: 14px 0;
+    		color: white;
+    		text-transform: uppercase;
+    		cursor: pointer;
+    		margin-top: 8px;
+    		width: 100%;
+    	}
+		input:focus
+		{
+			outline-width:1px;
+			outline-style: double;
+			outline-color:red;
+		}
+	</style>
+</head>
+<body>
+<div class="eg">
+	<div class="txt">
+		<label>PLEASE ENTER THE DETAILS..</label>
+	</div>
+
+		<form action="insert_vehicle.php" method="post">
+		<div class="txt">
+			<label>VEHICLE NO:</label>
+				<input type="text" name="vehicleno" placeholder="VehicleNo">
+			</div>
+	<div class="txt">
+		<label>VEHICLE COLOR:</label>
+			<input id="myInput" type="text" name="vehicle_color" placeholder="Color" list="datalist10"/>
+
+					<datalist id="datalist10">
+						<option value= "red"></option>
+						<option value= "rose"></option>
+						<option value= "black"></option>
+						<option value= "brown"></option>
+						<option value= "white"></option>
+						<option value= "purple"></option>
+						<option value= "pink"></option>
+						<option value= "violet"></option>
+						<option value= "green"></option>
+						<option value= "blue"></option>
+						<option value= "cyan"></option>
+						<option value= "gold"></option>
+						<option value= "yellow"></option>
+						<option value= "grey"></option>
+							
+					</datalist>
+			</div>
+			<div class="txt">
+
+					<label>VEHICLE TYPE:</label>
+					
+						<select name="vehicle_type">
+							<option value="choose">
+								Select the type of vehicle
+							</option>
+							<option value="cycle">
+								Cycle
+							</option>
+							<option value="Two-Wheeler">
+								Two-Wheeler
+							</option>
+							<option value="Three-Wheeler">
+								Three-Wheeler
+							</option>
+							<option value="Four-Wheeler">
+								Four-Wheeler
+							</option>
+						</select>
+				</div>
+				<div class="txt">
+					<label>VEHICLE MODEL:</label>
+					<input id="myInput" type="text" name="vmodel" placeholder="Enter the model" list="datalist"/>
+
+					<datalist id="datalist">
+						<option value= "Maruthi"></option>
+						<option value= "Yamaha"></option>
+						<option value= "TVS 50"></option>
+						<option value= "Scooty"></option>
+						<option value= "Hero Honda"></option>
+						<option value= "BMW"></option>
+						<option value= "Hyundai"></option>
+						<option value= "Tata"></option>
+						<option value= "Mahindra"></option>
+						<option value= "Toyota"></option>
+						<option value= "Audi"></option>
+						<option value= "Royal Enfield"></option>
+						<option value= "Lady Bird"></option>
+						<option value= "Jeep"></option>
+						<option value= "Mitsubishi"></option>	
+					</datalist>
+				</div>
+
+				<div class="txt">
+					<label>CONTACT NO:</label>
+					<input type="text" name="phoneno" placeholder="enter mobile no">
+				</div>
+		
+		<div class="btn">	<input type ="submit" value="FIND"></div>
+		</div>
+		</form>
+	
+</body></html>

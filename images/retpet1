@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>retpet</title>
+</head>
+<body>
+<form method="post">
+<input type="text" name="name"/>
+<input type="submit" name="search" value="search by wallet type"/>
+</form>
+<table border="1" bgcolor="lightgrey">
+   <tr>
+   	<th>PET KIND</th>
+    <th>BREED TYPE</th>
+    <th>UNIQUE IDENTIFICATION</th>
+    <th>COLOR</th>
+    <th>PHONE NO</th>
+    <th>IMAGE</th>
+    <th>FOUNDER NAME</th>
+    <th>FOUND DATE</th>
+    <th>FOUND TIME</th>
+   </tr><br>
+<?php
+$connection=mysqli_connect("localhost","root","");
+   $db=mysqli_select_db($connection,'web1');
+if(isset($_POST['search']))
+{
+   $name=$_POST['name'];
+$age=$_POST['age'];
+$uniqu=$_POST['uniqu'];
+$sql="SELECT * FROM pet INNER JOIN founder on pet.phoneno=founder.phoneno where name='$name' and age='$age' and uniqu = '$uniqu' and thing="pet";
+$result = mysqli_query($db,$sql);
+while($row=mysqli_fetch_array($result)){
+
+			echo "<div id='img_div'>";
+			echo "<td><img src='".$row['image']."'></td>";
+			echo "<td><p>".$row['name']."</p></td>";
+			echo "<td><p>".$row['breed']."</p></td>";
+			echo "<td><p>".$row['uniqu']."</p></td>";
+			echo "<td><p>".$row['color']."</p></td>";
+			echo "<td><p>".$row['phoneno']."</p></td>";
+			echo "<td><p>".$row['user']."</p></td>";
+			echo "<td><p>".$row['dates']."</p></td>";
+			echo "<td><p>".$row['times1']."</p></td>";
+			echo "</div>";
+		}
+}
+?>
+</body>
+</html>

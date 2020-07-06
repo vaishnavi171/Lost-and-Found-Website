@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <style type="text/css">
+    body {
+      background: url("image2.png");
+        color:white;
+        margin: 0;
+        padding: 0;
+        /*background-size: cover;*/
+      }
+      .eg{
+        width: 85%;
+        max-width: 600px;
+        background: #f1f1f1;
+        font-weight: bold;
+        color: black;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 30px 40px;
+        box-sizing:border-box;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 20px #000000b3;
+      }
+      .eg h1{
+        margin-top: 0;
+        font-weight: 200;
+      }
+      .txt{
+        border:1px solid grey;
+        margin: 8px 0;
+        padding: 12px 18px;
+        border-radius:8px;
+      }
+      .txt label{
+        display: block;
+        text-align: left;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      .txt input,.txt select,.txt textarea{
+        width: 100%;
+        border:none;
+        background: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: 6px;
+      }
+      .btn{
+        display: block;
+        background: #9b59b6;
+        padding: 14px 0;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 8px;
+        width: 100%;
+      }
+    input:focus, textarea:focus
+    {
+      outline-width:1px;
+      outline-style: double;
+      outline-color:red;
+    }
+    
+  </style>
+ 
+</head>
+<!--<script>
+function changeDropdown()
+ {
+  var state=document.getElementById("myselect").value;
+  alert(state);
+  if(state=="ot")
+   {
+    document.getElementById("name").style.visibility='visible';
+   }
+  else
+   {
+    document.getElementById("name").style.visibility='hidden';
+   }
+ }
+ function changenew()
+ {
+  var s=document.getElementById("my").value;
+  alert(s);
+  if(s=="oo")
+   {
+    document.getElementById("n").style.visibility='visible';
+   }
+  else
+   {
+    document.getElementById("n").style.visibility='hidden';
+   }
+ }
+ function changeneww()
+ {
+  var st=document.getElementById("m").value;
+  alert(st);
+  if(st=="ott")
+   {
+    document.getElementById("na").style.visibility='visible';
+   }
+  else
+   {
+    document.getElementById("na").style.visibility='hidden';
+   }
+ }*/
+
+</script>-->
+<body>
+  <div class="eg">
+    <div class="txt">
+      <label>PLEASE ENTER THE DETAILS..</label>
+  </div>
+<form action="insert_wallet.php" id="form" method="POST"  autocomplete="off">
+  <div class="txt">
+  <label>WALLET TYPE:</label>
+    
+            <input id="myInput" type="text" name="WalletType" placeholder="select type" list="datalist1"/>
+
+          <datalist id="datalist1">
+            <option value= "Large Wallet"></option>
+            <option value= "Cardcase Wallet"></option>
+            <option value= "Key Wallet"></option>
+            <option value= "Trifold Wallet"></option>  
+          </datalist>  
+          </div>
+  
+  <div class="txt">
+  <label>WALLET BRAND:</label>
+    
+            <input id="brand" type="text" name="WalletBrand" placeholder="select brand" list="datalist12"/>
+
+          <datalist id="datalist12">
+            <option value= "Hornbull"></option>
+            <option value= "Woodland"></option>
+            <option value= "Titan"></option>
+            <option value= "Levi's"></option>
+            <option value= "K London"></option>
+            <option value= "American Tourister"></option>
+          </datalist>
+            
+        </div>
+     <!-- <tr><td height="50" width="200"><div id="n"><label>OtherType</label><br><br>
+   <input type="text" name="WalletBrand" required></td></tr></div>-->
+  <div class="txt">
+    <label>UNIQUE IDENTIFICATION:</label>
+    <textarea id="wu"name="walletunique" rows="5" cols="50" placeholder="Enter the identification" required>
+    </textarea>
+  </div>
+  <div class="txt">
+  <label>WALLET COLOR:</label>
+            <input id="myInput" type="text" name="WalletColor" placeholder="Color" list="datalist10"/>
+
+          <datalist id="datalist10">
+            <option value= "red"></option>
+            <option value= "rose"></option>
+            <option value= "black"></option>
+            <option value= "brown"></option>
+            <option value= "white"></option>
+            <option value= "purple"></option>
+            <option value= "pink"></option>
+            <option value= "violet"></option>
+            <option value= "green"></option>
+            <option value= "blue"></option>
+            <option value= "cyan"></option>
+            <option value= "gold"></option>
+            <option value= "yellow"></option>
+            <option value= "grey"></option>
+              
+          </datalist>
+      </div>
+      <div class="txt">
+         <label> CONTACT NO:</label>
+          
+            <input type="text" name="phoneno" size="27px" placeholder="enter mobile no">
+          </div>
+          <div class="btn">
+      <input type="Submit" value="Submit">
+    </div>
+  </form>
+     </div>
+     </body>
+  </html>

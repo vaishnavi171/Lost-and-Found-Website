@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		FOUNDER SITE
+	</title>
+	<style type="text/css">
+		body {
+			background: url("image2.png");
+    		color:white;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.eg{
+    		width: 85%;
+    		max-width: 600px;
+    		background: #ffffff;
+    		color: black;
+    		font-weight: bold;
+    		position:absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%,-50%);
+    		padding: 30px 40px;
+    		box-sizing:border-box;
+    		border-radius: 8px;
+    		text-align: center;
+    		box-shadow: 0 0 20px #000000b3;
+    	}
+    	.eg h1{
+    		margin-top: 0;
+    		font-weight: 200;
+    	}
+    	.txt{
+    		border:1px solid grey;
+    		margin: 8px 0;
+    		padding: 12px 18px;
+    		border-radius:8px;
+    	}
+    	.txt label{
+    		display: block;
+    		text-align: left;
+    		color: #333;
+    		text-transform: uppercase;
+    		font-size: 14px;
+    	}
+    	.txt input{
+    		width: 100%;
+    		border:none;
+    		background: none;
+    		outline: none;
+    		font-size: 18px;
+    		margin-top: 6px;
+    	}
+    	.btn{
+    		display: block;
+    		background: #9b59b6;
+    		padding: 14px 0;
+    		color: white;
+    		text-transform: uppercase;
+    		cursor: pointer;
+    		margin-top: 8px;
+    		width: 100%;
+    	}
+		input:focus
+		{
+			outline-width:1px;
+			outline-style: double;
+			outline-color:red;
+		}
+	</style>
+	<!--<script type="text/javascript">
+		function changeDropdown(val)
+		{
+			var ele=document.getElementById("Other");
+			if(val=='Other')
+				ele.style.display='block';
+			else
+				ele.style.display='none';
+		}
+		function changeDropdown1(val)
+		{
+			var ele=document.getElementById("Other1");
+			if(val=='Other1')
+				ele.style.display='block';
+			else
+				ele.style.display='none';
+		}
+	</script>-->
+</head>
+<body>
+	<div class="eg">
+		<br>
+		<font size="30px" color="black">PLEASE ENTER THE DETAILS..</font><hr>
+		<br>
+		
+		<form action="insert_eg.php" method="post">
+			<!--<font color="yellow" size="6">
+				-->
+					<div class="txt">
+					<label>ELECTRONIC GADGET TYPE:</label>
+					<!--<td class="autocomplete">-->
+						<input id="myInput" type="text" name="egtype" placeholder="select type" style="height: 20px" size="27px" list="datalist2"/>
+
+					<datalist id="datalist2">
+						<option value= "Mobile"></option>
+						<option value= "Laptop"></option>
+						<option value= "Tablets"></option>
+						<option value= "Power banks"></option>
+						<option value= "sd card"></option>
+						<option value= "ear phones"></option>
+						<option value= "bluetooth"></option>
+						
+					</datalist>
+						
+				
+				</div>
+				
+
+				<div class="txt">
+					<label>ELECTRONIC GADGET BRAND:</label>
+					<!--<td class="autocomplete">-->
+						<input id="eg" type="text" name="brand" placeholder="select brand" style="height: 20px" size="27px" list="datalist112"/>
+
+					<datalist id="datalist112">
+						<option value= "Redmi"></option>
+						<option value= "Lenova"></option>
+						<option value= "samsung"></option>
+						<option value= "sony"></option>
+						<option value= "LG"></option>
+						<option value= "Panasonic"></option>
+						<option value= "Apple"></option>
+						<option value= "intel"></option>
+						<option value= "oppo"></option>
+						<option value= "oneplus"></option>
+						<option value= "hcl"></option>
+						<option value= "karbonn"></option>
+						<option value= "voltas"></option>
+						<option value= "micromax"></option>
+						<option value= "acer"></option>
+						<option value= "dell"></option>
+						<option value= "xolo"></option>
+						<option value= "sandisk"></option>
+						<option value= "bose"></option>
+						<option value= "skullcandy"></option>
+						
+					</datalist>
+						
+					</div>
+
+				
+
+
+				<div class="txt">
+					<label>COLOR:</label>
+					<!--<td class="autocomplete">-->
+						<input id="myInput" type="text" name="Color" placeholder="Color" style="height: 20px" size="27px" list="datalist10"/>
+
+					<datalist id="datalist10">
+						<option value= "red"></option>
+						<option value= "rose"></option>
+						<option value= "black"></option>
+						<option value= "brown"></option>
+						<option value= "white"></option>
+						<option value= "purple"></option>
+						<option value= "pink"></option>
+						<option value= "violet"></option>
+						<option value= "green"></option>
+						<option value= "blue"></option>
+						<option value= "cyan"></option>
+						<option value= "gold"></option>
+						<option value= "yellow"></option>
+						<option value= "grey"></option>
+							
+					</datalist>
+				</div>
+				
+				<div class="txt">
+				<label>CONTACT NO:</label>
+          		
+	            <input type="text" name="phoneno" size="27px" style="height: 20px" placeholder="enter mobile no">
+	          </div>
+		
+			<br>
+				<div class="btn"><input type ="submit" value="FIND" style="height: 50px"></div>
+		</form></div>
+</body>

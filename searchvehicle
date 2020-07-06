@@ -1,0 +1,68 @@
+<html>
+<head>
+ <title>Search data</title>
+ <style>
+  body{
+   background-color: grey;
+  }
+  table,th,td{
+   border:2px solid black;
+   width:1100px;
+   background-color: lightgreen;
+  }
+  .btn{
+   width: 10%;
+   height: 5%;
+   font-size: 22px;
+   padding: 0px;
+  }
+ </style>
+</head>
+<body>
+ <center>
+  <h1>Search for a single data</h1>
+  <h2>Retrive/search/fetch/data from db</h2>
+ 
+ <div class="container">
+  <form action="" method="POST">
+   <input type="text" name="vehicleno" class="btn"placeholder="enter the no"/>
+   <input type="submit" name="search" class="btn" value="search by vehicle no"/>
+  </form>
+  <table>
+   <tr>
+    <th>VEHICLE NO</th>
+    <th>VEHICLE COLOR</th>
+    <th>VEHICLE TYPE</th>
+    <th>VEHICLE MODEL</th>
+   </tr><br>
+   <?php
+   $connection=mysqli_connect("localhost","root","");
+   $db=mysqli_select_db($connection,'web1');
+   if(isset($_POST['search']))
+   {
+    $vehicleno = $_POST['vehicleno'];
+    $query = "SELECT * FROM vehicle where vehicleno='$vehicleno' ";
+    $query_run = mysqli_query($connection,$query);
+    while($row = mysqli_fetch_array($query_run))
+    {
+     ?>
+     
+     <tr>
+      <td> <?php echo $row['vehicleno'];?>
+      </td>
+      <td><?php echo $row['vehicle_color'];?>
+      </td>
+      <td><?php echo $row['vehicle_type'];?>
+      </td>
+      <td><?php echo $row['vmodel'];?>
+      </td>
+     </tr>
+     <?php
+    }
+   }
+   ?>
+  </table>
+  </div>
+  </center>
+</body>
+</html>

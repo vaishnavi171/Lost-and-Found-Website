@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		FOUNDER UPDATE SITE
+	</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style type="text/css">
+		body {
+			background: url("image2.png");
+    		color:white;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.eg{
+    		width: 85%;
+    		max-width: 600px;
+    		background: #f1f1f1;
+    		opacity: 0.7;
+    		color: black;
+    		font-weight: bold;
+    		position:absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%,-50%);
+    		padding: 30px 40px;
+    		box-sizing:border-box;
+    		border-radius: 8px;
+    		text-align: center;
+    		box-shadow: 0 0 20px #000000b3;
+    	}
+    	.eg h1{
+    		margin-top: 0;
+    		font-weight: 200;
+    	}
+    	.txt{
+    		border:1px solid grey;
+    		margin: 8px 0;
+    		padding: 12px 18px;
+    		border-radius:8px;
+    	}
+    	.txt label{
+    		display: block;
+    		text-align: left;
+    		color: #333;
+    		text-transform: uppercase;
+    		font-size: 14px;
+    	}
+    	.txt input{
+    		width: 100%;
+    		border:none;
+    		background: none;
+    		outline: none;
+    		font-size: 18px;
+    		margin-top: 6px;
+    	}
+    	.btn{
+    		display: block;
+    		background: #9b59b6;
+    		padding: 14px 0;
+    		color: white;
+    		text-transform: uppercase;
+    		cursor: pointer;
+    		margin-top: 8px;
+    		width: 100%;
+    	}
+		input:focus
+		{
+			outline-width:1px;
+			outline-style: double;
+			outline-color:red;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="form">
+	
+		
+		<form action="insert.php" method="POST">
+		<div class="eg">
+			<div class="txt">
+				<label>HAVE YOU HAND OVER TO POLICE STATION, THEN PLEASE FILL THE DETAILS HERE</label>
+				</div>
+
+				<div class="txt">
+					<label>YOUR NAME:</label>
+					
+						<input id="name" type="text" name="name" required>
+				</div>
+
+				<div class="txt">
+					<label>NAME OF THE THING:</label>
+					<input id="thing" type="text" name="thing" required>
+				</div>
+
+
+				<div class="txt">
+					<label>POLICE STATION NUMBER:</label>
+					<input id="pno" type="text" name="pno" required>
+					
+				</div>
+
+				<div class="txt">
+					<label>POLICE STATION NAME:</label>
+					<input id="pname" type="text" name="pname" required>
+				</div>
+
+				<div class="txt">
+					<label>POLICE STATION PLACE:</label>
+						<input id="place" type="text" name="place"  required>
+					</div>
+			<div class="txt">
+					<label>PHONE NO:</label>
+						<input id="place" type="text" name="phoneno"  required>
+					</div>
+			
+
+			<div class="btn">
+				<input type ="submit" value="Submit" name="submit">
+			</div>
+			</div>
+		</form>
+		
+		<!--<h3 id="success-msg" style="text-align: center !important;margin-top: 190px !important;display: none;color:#fff">YOUR REQUEST POSTED</h3>-->
+	</div>
+<!--	<script>
+		function postToGoogle()
+		{
+			var field1=$("#namefield").val();
+			var field2=$("#thingfield").val();
+			var field3=$("#nofield").val();
+			var field4=$("#pnamefield").val();
+			var field5=$("#placefield").val();
+			if(field1==" ")
+			{
+				alert('Please fill your name');
+				document.getElementById("namefield").focus();
+				return false;
+			}
+			if(field2==" ")
+			{
+				alert('Please fill thing name');
+				document.getElementById("thingfield").focus();
+				return false;
+			}
+			if(field3==" ")
+			{
+				alert('Please fill PoliceStation Number');
+				document.getElementById("nofield").focus();
+				return false;
+			}
+			if(field4==" ")
+			{
+				alert('Please fill PoliceStation name');
+				document.getElementById("pnamefield").focus();
+				return false;
+			}
+			if(field5==" ")
+			{
+				alert('Please fill place');
+				document.getElementById("placefield").focus();
+				return false;
+			}
+
+			$.ajax({
+				url:"https://docs.google.com/forms/d/e/1FAIpQLSdRl536eTDNZbo-rH_d6FYPTIahhAI58r2whOzX0dxHf8KvYQ/formResponse?",
+				data:{"entry.715374679":field1,"entry.305231180":field2,"entry.1474769602":field3,"entry.1484170061":field4,"entry.654678224":field5},
+				type:"POST",
+				dataType:"xml",
+				success:function(d)
+				{
+
+				},
+				error:function(x,y,z)
+				{
+					$('#success-msg').show();
+					$('#form').hide();
+				}
+			});
+			return false;
+		}
+	</script>-->
+</body>
+</html>
